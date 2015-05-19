@@ -22,38 +22,58 @@ public class IntegerRead {
      */
     public static void main(String[] args) throws FileNotFoundException {
         File num = new File("Numbers.txt");
-        
-        //print out the numbers
+      
         Scanner a = new Scanner(num);
         a.useDelimiter(",");
         
-        int c = 1;
-       
-        while(a.hasNextInt()) {
-            System.out.print(a.next()); 
-            System.out.print(", ");
+        int c = 1, l = 0;
+        
+        while(a.hasNextInt()){
+            a.next();
+            l++;      
+        }
+        
+        a.close();
+          
+        //Print out the numbers
+        Scanner Numbers = new Scanner(num);
+        Numbers.useDelimiter(",");
+        
+        while(Numbers.hasNextInt()) {
+            System.out.print(Numbers.next()); 
+            
+            if (c < l){
+                   System.out.print(", ");
+            }
             
             if (c % 8 == 0){
                 System.out.println("");
             }
             c++;   
+         
         }
         
-        a.close();
+        //How many numbers
+        System.out.println("\n" + "There are " + (l) + " numbers in this list");
+               
+        Numbers.close();
         
         //largest number
-        Scanner b = new Scanner(num);
+        Scanner largestNum = new Scanner(num);
+        largestNum.useDelimiter(",");
         
-        c = 0;
-        int l = 0;
+        int largest = 0, numL = 0;
         
-        while(b.hasNextInt()){
-            
-           
+        while(largestNum.hasNextInt()){
+            numL = largestNum.nextInt();
+          if (largest < numL)
+              largest = numL;
             
         }
         
+        System.out.println(largest + " is the largest number");
       
+        largestNum.close();
     }
    
 }
