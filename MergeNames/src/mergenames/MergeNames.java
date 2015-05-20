@@ -19,12 +19,14 @@ public class MergeNames {
     /**
      * @param args the command line arguments
      */
+    
+    public static Scanner bN, gN;
     public static void main(String[] args) throws FileNotFoundException {
-        File boyNames = new File("boyNames");
-        File girlNames = new File("girlNames");
+        File boyNames = new File("boyNames.txt");
+        File girlNames = new File("girlNames.txt");
         
-        Scanner bN = new Scanner(boyNames);
-        Scanner gN = new Scanner(girlNames);
+         bN = new Scanner(boyNames);
+         gN = new Scanner(girlNames);
         
         int l = 0;
         int bNum = 0;
@@ -42,8 +44,8 @@ public class MergeNames {
         bN.close();
         gN.close();
         
-        Scanner boyN = new Scanner(boyNames);
-        Scanner girlN = new Scanner(girlNames);
+        bN = new Scanner(boyNames);
+        gN = new Scanner(girlNames);
         
         String [] names = new String[l];
         
@@ -51,18 +53,18 @@ public class MergeNames {
         
         while(c < l){
             if(c < bNum){
-                names[c] = boyN.next();
+                names[c] = bN.next();
             }
             else {
-                names[c] = girlN.next();
+                names[c] = bN.next();
             }
         }
         
-        boyN.close();
-        girlN.close();
+        bN.close();
+        gN.close();
         
         String temp = "";
-        c = 1;
+        c = 0;
         
         while(c != l){
             if(names[c+1].compareTo(names[c]) < 0) //meaning the next element is higher than the element above it 
@@ -71,8 +73,18 @@ public class MergeNames {
                 names[c+1] = names[c];
                 names[c] = temp;
             }
-            
+            c++;
         }
+        
+        c = 0;
+        
+        while (c != l){
+            System.out.println(names[c]);
+            c++; 
+                        
+        }
+       
+     
     }
     
 }
