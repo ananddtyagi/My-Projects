@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package stringpractice;
 
 /**
@@ -19,46 +18,44 @@ public class StringPractice {
     /**
      */
     public static Scanner food;
-    
+
     public static void main(String[] args) throws FileNotFoundException {
-      
+
         File foodList = new File("food.txt");
-        Scanner food = new Scanner(foodList);
+        food = new Scanner(foodList);
         food.useDelimiter(", ");
         int numElements = 0;
-       
+
         System.out.println("hi1"); //test code
-        
-        while(food.hasNext()){
+
+        while (food.hasNext()) {
             food.next();
             numElements++;
         }
-        
+
         System.out.println("hi1"); //test code
-        
+
         food.close();
-        
+
         food = new Scanner(foodList);
-        food.useDelimiter(",");
-        
+        food.useDelimiter(", ");
+
         System.out.println("hi1"); //test code
-        
-        String [] foods = new String[numElements];
+
+        String[] foods = new String[numElements];
         int c = 0;
-        
+
         System.out.println("hi1"); //test code
-        while(food.hasNext()){
+        while (food.hasNext()) {
             foods[c] = food.next();
             c++;
         }
-        
+
         System.out.println("hi1"); //test code
-        
-        System.out.println(FoodOrder.OrderUnderstand(foods, numElements));
-        
+
+        FoodOrder.Order(foods, numElements);
+
         System.out.println("hi1"); //test code
     }
 
-    
-    
 }

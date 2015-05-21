@@ -14,26 +14,42 @@ public class FoodOrder {
     
    
     
-    public static int OrderUnderstand(String [] foods, int numElements){
+    public static void Order(String [] foods, int numElements){
         
-       int shortL = 0;
-       int c = 1;
-       
+       int c = 0;
+       int largest = foods[c].length(), smallest = foods[c].length();
+       String large = "", small = "";
        while(c != numElements){
-           if(foods[c].length() < foods[c-1].length()){
-               shortL = foods[c].length();
+           
+           if(largest < foods[c].length() || largest == foods[c].length()){
+               largest = foods[c].length();  
+               large = foods[c];
            }
-           else {
-               shortL = foods[c-1].length();
+           
+           if(smallest > foods[c].length() || largest == foods[c].length()){
+               smallest = foods[c].length();
+               //small = foods[c];
            }
+           
+           
            c++;
            
-           System.out.println(shortL);
        }
        
-       System.out.println(shortL);
-       
-       return c;
+      System.out.println("The Largest Word is " + large);
+      
+      c = 0;
+      
+      while(c != numElements){
+          if(foods[c].length() > smallest || foods[c].length() == smallest){
+            System.out.println(foods[c] + " " + foods[c].charAt(c));
+          }
+          else{
+            System.out.println("Sorry, the word is too short");
+          }
+          c++;
+      }
+      
     }
    
 }
