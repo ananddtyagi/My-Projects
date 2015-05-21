@@ -1,1 +1,1 @@
-Hamburger, Cheese, Onion, Soda, Bacon
+Hamburger, Cheese, Onion, Bacon, Soda

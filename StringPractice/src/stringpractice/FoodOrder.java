@@ -41,7 +41,7 @@ public class FoodOrder {
       c = 0;
       
       while(c != numElements){
-          if(foods[c].length() > smallest || foods[c].length() == smallest){
+          if(foods[c].length() > smallest){
             System.out.println(foods[c] + " " + foods[c].charAt(c));
           }
           else{
