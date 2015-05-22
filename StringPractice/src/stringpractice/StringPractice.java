@@ -26,36 +26,28 @@ public class StringPractice {
         food.useDelimiter(", ");
         int numElements = 0;
 
-        System.out.println("hi1"); //test code
 
         while (food.hasNext()) {
             food.next();
             numElements++;
         }
 
-        System.out.println("hi1"); //test code
-
         food.close();
 
         food = new Scanner(foodList);
         food.useDelimiter(", ");
 
-        System.out.println("hi1"); //test code
-
         String[] foods = new String[numElements];
         int c = 0;
 
-        System.out.println("hi1"); //test code
         while (food.hasNext()) {
             foods[c] = food.next();
             c++;
         }
 
-        System.out.println("hi1"); //test code
 
         FoodOrder.Order(foods, numElements);
 
-        System.out.println("hi1"); //test code
     }
 
 }

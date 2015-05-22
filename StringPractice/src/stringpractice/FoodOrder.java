@@ -18,7 +18,7 @@ public class FoodOrder {
         
        int c = 0;
        int largest = foods[c].length(), smallest = foods[c].length();
-       String large = "", small = "";
+       String large = "";
        while(c != numElements){
            
            if(largest < foods[c].length() || largest == foods[c].length()){
@@ -26,9 +26,8 @@ public class FoodOrder {
                large = foods[c];
            }
            
-           if(smallest > foods[c].length() || largest == foods[c].length()){
+           if(smallest > foods[c].length() || smallest == foods[c].length()){
                smallest = foods[c].length();
-               //small = foods[c];
            }
            
            
@@ -41,11 +40,11 @@ public class FoodOrder {
       c = 0;
       
       while(c != numElements){
-          if(foods[c].length() > smallest){
+          if(foods[c].length() >= (c+1)){
             System.out.println(foods[c] + " " + foods[c].charAt(c));
           }
           else{
-            System.out.println("Sorry, the word is too short");
+            System.out.println("Sorry, '" + foods[c] + "' is too short a word");
           }
           c++;
       }
