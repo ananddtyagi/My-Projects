@@ -62,7 +62,7 @@ public class IntegerRead {
         Scanner largestNum = new Scanner(num);
         largestNum.useDelimiter(",");
         
-        int largest = 0, numL = 0;
+        int largest = 0, numL;
         
         while(largestNum.hasNextInt()){
             numL = largestNum.nextInt();
