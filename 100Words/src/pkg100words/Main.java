@@ -51,21 +51,60 @@ public class Main {
             words[c] = wordsFile.next();
             c++;
         }
+
+        c = 0;
+        int th = 0;
+        int ed = 0;        
         
- 
-     
-        //every fifth word to upper
-        for(c = 0; c != (l-1) ; c++){           
-            if((c+1) % 5 == 0){
-                words[c] = words[c].toUpperCase();
-            } else {
-                words[c] = words[c].toLowerCase();
-            }
-            System.out.println(words[c]);
+       
+        for(int i = 1; i != (l) ; i++){
+           
+                if(i % 5 == 0){
+                    words[c] = words[c].toUpperCase();
+                    if(words[c].startsWith("TH")){
+                        th++;
+                    }
+                    if(words[c].startsWith("ED")){
+                        ed++;
+                    }
+                 
+                    words[c] = words[c].replace("A", "*");
+                    words[c] = words[c].replace("E", "*");
+                    words[c] = words[c].replace("I", "*");
+                    words[c] = words[c].replace("O", "*");
+                    words[c] = words[c].replace("U", "*");
+                                     
+                } else {
+                    words[c] = words[c].toLowerCase();
+                    if(words[c].startsWith("th")){
+                        th++;
+                    }
+                    if(words[c].startsWith("ed")){
+                        ed++;
+                    }
+               
+                    words[c] = words[c].replace("a", "*");
+                    words[c] = words[c].replace("e", "*");
+                    words[c] = words[c].replace("i", "*");
+                    words[c] = words[c].replace("o", "*");
+                    words[c] = words[c].replace("u", "*");  
+                }
+
+                if(i % 20 == 0){
+                    if(i != 100){
+                        System.out.println(words[c] + ", ");
+                    } else {
+                        System.out.println(words[c]);
+                    }
+                }else{
+                    System.out.print(words[c] + ", ");
+                }
+  
             c++;
         }
                   
-        
+        System.out.println(th + " words start with 'th'.");
+        System.out.println(ed + " words start with 'ed'.");
     }
     
 }
