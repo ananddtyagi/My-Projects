@@ -28,44 +28,36 @@ public class Main {
         
         wordsFile = new Scanner(word);
         wordsFile.useDelimiter(" ");
-        int l = 1;
+        int l = 0;
+        String [] words = new String[1000]; //this is the upper bound value. MAX VALUE
+        String temp = "";
         
         while(wordsFile.hasNext()){
-            wordsFile.next();
-            l++;
+            temp = wordsFile.next();
+            if(temp.equals(" ") || temp.equals("")){
+            }else{
+                words[l] = temp;
+                l++;
+            }
         }
         
         wordsFile.close();
         
-        word = new File("Words.txt");
-        
-        wordsFile = new Scanner(word);
-        wordsFile.useDelimiter(" ");
-        
-        //it now has the capacity to make an array of the 100 words
-        String [] words = new String[l];
-        
-        int c = 0;
-        
-        while(wordsFile.hasNext()){
-            words[c] = wordsFile.next();
-            c++;
-        }
-
-        c = 0;
         int th = 0;
-        int ed = 0;        
+        int ed = 0;         
+        String thWords = "", edWords = "";
         
-       
-        for(int i = 1; i != (l) ; i++){
+        for(int c = 0; c != (l) ; c++){
            
-                if(i % 5 == 0){
+                if((c+1) % 5 == 0){
                     words[c] = words[c].toUpperCase();
                     if(words[c].startsWith("TH")){
                         th++;
+                        thWords += words[c] + ", ";
                     }
-                    if(words[c].startsWith("ED")){
+                    if(words[c].endsWith("ED")){
                         ed++;
+                        edWords += words[c] + ", ";
                     }
                  
                     words[c] = words[c].replace("A", "*");
@@ -78,9 +70,11 @@ public class Main {
                     words[c] = words[c].toLowerCase();
                     if(words[c].startsWith("th")){
                         th++;
+                        thWords += words[c] + ", ";
                     }
-                    if(words[c].startsWith("ed")){
+                    if(words[c].endsWith("ed")){
                         ed++;
+                        edWords += words[c] + ", ";
                     }
                
                     words[c] = words[c].replace("a", "*");
@@ -90,8 +84,8 @@ public class Main {
                     words[c] = words[c].replace("u", "*");  
                 }
 
-                if(i % 20 == 0){
-                    if(i != 100){
+                if((c+1) % 20 == 0){
+                    if((c+1) != 100){
                         System.out.println(words[c] + ", ");
                     } else {
                         System.out.println(words[c]);
@@ -100,11 +94,20 @@ public class Main {
                     System.out.print(words[c] + ", ");
                 }
   
-            c++;
         }
-                  
-        System.out.println(th + " words start with 'th'.");
-        System.out.println(ed + " words start with 'ed'.");
+             
+        thWords = replaceLast(thWords, ", ", "");
+        thWords = replaceLast(thWords, ", ", " and ");
+        edWords = replaceLast(edWords, ", ", "");
+        edWords = replaceLast(edWords, ", ", " and ");
+        
+        System.out.println(th + " words, " + thWords + ", start with 'th'.");
+        System.out.println(ed + " words, " + edWords + ", start with 'ed'.");
     }
     
+    //how does this code work?
+    public static String replaceLast(String text, String regex, String replacement) {
+        return text.replaceFirst("(?s)"+regex+"(?!.*?"+regex+")", replacement);
+    }
+
 }
