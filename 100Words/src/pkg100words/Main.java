@@ -48,25 +48,7 @@ public class Main {
         String thWords = "", edWords = "";
         
         for(int c = 0; c != (l) ; c++){
-           
-                if((c+1) % 5 == 0){
-                    words[c] = words[c].toUpperCase();
-                    if(words[c].startsWith("TH")){
-                        th++;
-                        thWords += words[c] + ", ";
-                    }
-                    if(words[c].endsWith("ED")){
-                        ed++;
-                        edWords += words[c] + ", ";
-                    }
-                 
-                    words[c] = words[c].replace("A", "*");
-                    words[c] = words[c].replace("E", "*");
-                    words[c] = words[c].replace("I", "*");
-                    words[c] = words[c].replace("O", "*");
-                    words[c] = words[c].replace("U", "*");
-                                     
-                } else {
+                
                     words[c] = words[c].toLowerCase();
                     if(words[c].startsWith("th")){
                         th++;
@@ -81,8 +63,12 @@ public class Main {
                     words[c] = words[c].replace("e", "*");
                     words[c] = words[c].replace("i", "*");
                     words[c] = words[c].replace("o", "*");
-                    words[c] = words[c].replace("u", "*");  
-                }
+                    words[c] = words[c].replace("u", "*"); 
+                    
+                    if((c+1) % 5 == 0){
+                        words[c] = words[c].toUpperCase();
+                    }
+                              
 
                 if((c+1) % 20 == 0){
                     if((c+1) != 100){

@@ -18,11 +18,6 @@ public class Password {
      */
     public static void main(String[] args) {
         
-        //TELL MR.F THAT I HAVE THE AP BOOK!!!
-        //TELL MR.F THAT I HAVE THE AP BOOK!!!
-        //TELL MR.F THAT I HAVE THE AP BOOK!!!
-        //TELL MR.F THAT I HAVE THE AP BOOK!!!
-        
         System.out.println("Please enter your password. It must have between 8 and 20 characters (inclusive), "
                 + "1 U/C, 1 L/C, 1 number, and it cannot start with a number.");
         Scanner p = new Scanner(System.in);
@@ -46,6 +41,17 @@ public class Password {
             passC = false;
         }
         
+        int asc = 0;
+        for(int i = 0; i < pass.length(); i++){
+            asc = (int)pass.charAt(i);
+            switch(asc){        
+                case 0 <= asc >= 9: return true;
+            }
+        }
+        
+      
+            
+        }
         /*checking if it is equal to when all the characters are upper or lower case to see
           if there are no upper or lower case letters
         */
