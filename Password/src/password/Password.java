@@ -20,84 +20,84 @@ public class Password {
         
         System.out.println("Please enter your password. It must have between 8 and 20 characters (inclusive), "
                 + "1 U/C, 1 L/C, 1 number, and it cannot start with a number.");
+        
         Scanner p = new Scanner(System.in);
         String pass;
-        String leng, upper, lower, num, numStart;
-        boolean passC = false;
+         pass = p.next();
+        String resp = ""; //this is the string that will give the final response
+        boolean  numStart = false, number = false, upperC = false, lowerC = false, passL = false;
+        boolean passFinal = false;
         
-        while(passC == false){ //if it does not meet the requirements then the person can try again.
-
-        pass = p.next();
-        leng = ""; upper = ""; lower = ""; num = ""; numStart = "";
-        passC = true;  
+        while(passFinal == false){
         
-        //checking if it is too short or too long
-        if(8 > pass.length()){
-            leng = "Your Password is too short. ";
-            passC = false;
+        if(pass.length() < 8){
+            resp = "Your Password is too short";
+            passL = false;
         }
         if(pass.length() > 20){
-            leng = "Your Password is too long. ";
-            passC = false;
+            resp = "Your Password is too long";
+            passL = false;
         }
         
-        int asc = 0;
+        passFinal = passL;
+        
+        int asc;
+        asc = (int)pass.charAt(0);
+        
+        if(asc < 9){
+            numStart = false;
+        }
+        
         for(int i = 0; i < pass.length(); i++){
             asc = (int)pass.charAt(i);
-            switch(asc){        
-                case 0 <= asc >= 9: return true;
+            if(number == false){  
+                if(0 <= asc || asc <= 9){
+                  number = true;
+              }
+            }
+            if(upperC == false){
+                if(65 <= asc || asc <= 90){
+                   upperC = true;
+                }
+            }
+            if(lowerC == false){
+                if(97 <= asc || asc <= 122){
+                    lowerC = true;
+                }
             }
         }
         
-      
-            
+        if(numStart == false){
+            resp = resp + ", your password cannot start with a number";
+            passFinal = false;
+            numStart = false;       
         }
-        /*checking if it is equal to when all the characters are upper or lower case to see
-          if there are no upper or lower case letters
-        */
-        int ascLow = 0;
-        int ascHigh = 0;
-        int ascPass = 0;
-        
-        for(int i = 1; i != pass.length(); i++){
-            ascLow += (int)pass.toLowerCase().charAt(i);
-            ascHigh += (int)pass.toUpperCase().charAt(i);
-            ascPass += (int)pass.charAt(i);
+        if(number == false){
+            resp = resp + ", your psasword does not contain a number";
+            passFinal = false;  
+            number = false;
         }
-
-        if(ascPass == ascLow){ //if the value is the same as when all the numbers are lower case it means that there are no upper case letters
-            upper = "Your Password does not contain an upper case letter. ";      
-            passC = false;
+        if(upperC == false){
+            resp = resp + ", your password does not contain an upper case letter";
+            passFinal = false; 
+            upperC = false;    
         }
-        if(ascPass == ascHigh){ //other way around
-            lower = "Your Passowrd does not contain an lower case letter. ";
-            passC = false;
+        if(lowerC == false){
+            resp = resp + ", your password does not contain a lower case letter";
+            passFinal = false;
+            lowerC = false;
         }
         
-        //Checking to see if there are any numbers (the ".*\\d+.*" does that)
-        if(pass.matches(".*\\d+.*")){
+        System.out.println(resp);
+        
+        if(passFinal == false){
+            System.out.println("Sorry, your password did not meet the requirements, please try again.");
         }else{
-            num = "Your Password does not contain a number. ";
-            passC = false;
+            System.out.println("Your password met all the requirements.");
+            passFinal = true;
         }
-
-        //checking to see if it starts with a number
-        if(pass.substring(0,1).matches(".*\\d+.*")){
-            numStart = "Your Password cannot start with a number. ";
-            passC = false;
-        }
-        
-        if(passC == false){
-            System.out.println(leng + upper + lower + num + numStart+ "\n" + "\n" 
-                    + "Your password did not meet the requirements, please try again");
-        }else{
-            System.out.println("Your password meets all the requirements.");
-            passC = true;
-        }
-        
-        }
-       
-        
+        }   
     }
-    
+   
 }
+
