@@ -20,12 +20,14 @@ public class NumLetterDigits {
     public static void main(String[] args) {
         
         Scanner a = new Scanner(System.in);
-        String input = a.nextLine();
+        String input = a.next();
         int asc, num = 0, ch = 0;
-       
+        String inputT = input.replace(" ", ""); // FIX THIS, NEED TO REMOVE SPACES
+        System.out.println(inputT);
         
-        for(int i = 0; i < input.length(); i++){
-            asc = (int)input.charAt(i);    
+        for(int i = 0; i < inputT.length(); i++){
+            asc = (int)inputT.charAt(i);
+            
                 if(asc >= 48 && asc <= 57){
                     num++;
                 } else if((asc >= 65 && asc <= 90) || (asc >= 97 && asc <= 122)) {
