@@ -22,7 +22,7 @@ public class StringBackwards {
         Scanner a = new Scanner(System.in);
         
         System.out.println("Please enter a word (or a few).");
-        String input = a.next();
+        String input = a.nextLine();
         String temp = "";
         int leng = input.length();
         String [] output = new String[leng];
