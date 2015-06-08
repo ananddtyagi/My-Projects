@@ -36,20 +36,23 @@ public class TextAnalysis {
            
         //takes out all the puctuation
         int i;
-        for(i = 0; i < list.size() ;i++){    
+        for(i = 0; i < list.size(); i++){    
             list.add(i, list.remove(i).replaceAll("[^a-zA-Z\\s]", "").replaceAll("\\s+", " "));           
         }
-       
-        System.out.println(list.get(0));
+               
+        int asc;
+        int numOfLet[] = new int[26];
+             
+        for(i = 0; i < list.size() ;i++){         
+            temp = list.get(i).substring(i, i+1);
+            temp = temp.toUpperCase();
+            asc = (int)temp.charAt(0);
     
-       
-        for(i = 0; i < list.size() ;i++){
-            
-            list.get(i).substring(i, i+1);
-            
-            if( )
+            numOfLet[asc - 65]++;
+            ;
         }
-         
+        
+         System.out.println(numOfLet[0]);
     }
     
 }
