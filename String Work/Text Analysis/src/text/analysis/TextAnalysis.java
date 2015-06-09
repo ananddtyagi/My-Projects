@@ -29,12 +29,15 @@ public class TextAnalysis {
         String temp;
         int [] numOfLeng = new int[20];
         int numOfLet[] = new int[26];
+        int i;
+        int greatest = 0;
              
         while (!(temp = a.nextLine()).equals("0")) {//putting the lines into separate strings
             line = temp;   
             
              //takes out all the punctuation
-        int i;
+        i = 0;
+        
         for(i = 0; i < line.length(); i++){    
             line = line.replaceAll("[^a-zA-Z\\s]", "");           
         }
@@ -44,9 +47,9 @@ public class TextAnalysis {
                 
         for(int b = 0; b < line.length(); b++){
             
-                //adds how many of each thing there is
+                //adds how many of each letter there is
                 temp = temp.toUpperCase();
-                asc = (int)temp.charAt(0);
+                asc = (int)temp.charAt(b);
                 
                 if(asc != 32){
                     numOfLet[asc - 65]++;
@@ -61,11 +64,29 @@ public class TextAnalysis {
         for(i = 0; i < words.length; i++){
             if(numOfLeng[i] != 0){
                 numOfLeng[words[i].length()]++;
+                if(greatest < numOfLeng[words[i].length()]++){
+                    greatest = numOfLeng[words[i].length()]++;;
+                }
             }
+            
+            
+            
         }
+        
     }
         
     //display everything
+        
+    String letter;
+    for(i = 0; i < 26; i++){
+        letter = Character.toString((char)(i+65));
+        System.out.println(letter + " " +  numOfLet[i] );
+    }
+    
+    for(i = 1; i < greatest; i++){
+        System.out.println("Number of " + (i+1) + " lettered words: " + numOfLeng[i]);
+    }
+    
     
 }
 }
