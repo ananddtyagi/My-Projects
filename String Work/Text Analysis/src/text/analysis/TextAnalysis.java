@@ -25,34 +25,47 @@ public class TextAnalysis {
         Scanner a = new Scanner(System.in);
         System.out.println("Please enter something");
         
-        ArrayList<String> list = new ArrayList<>();
-        
+        String line;
         String temp;
-        
-        //puting the lines into separate strings
-        while (!(temp = a.nextLine()).equals("0")) {
-            list.add(temp);            
-        }
-           
-        //takes out all the puctuation
-        int i;
-        for(i = 0; i < list.size(); i++){    
-            list.add(i, list.remove(i).replaceAll("[^a-zA-Z\\s]", "").replaceAll("\\s+", " "));           
-        }
-               
-        int asc;
+        int [] numOfLeng = new int[20];
         int numOfLet[] = new int[26];
              
-        for(i = 0; i < list.size() ;i++){         
-            temp = list.get(i).substring(i, i+1);
-            temp = temp.toUpperCase();
-            asc = (int)temp.charAt(0);
-    
-            numOfLet[asc - 65]++;
-            ;
+        while (!(temp = a.nextLine()).equals("0")) {//putting the lines into separate strings
+            line = temp;   
+            
+             //takes out all the punctuation
+        int i;
+        for(i = 0; i < line.length(); i++){    
+            line = line.replaceAll("[^a-zA-Z\\s]", "");           
         }
         
-         System.out.println(numOfLet[0]);
+        int asc;
+        
+                
+        for(int b = 0; b < line.length(); b++){
+            
+                //adds how many of each thing there is
+                temp = temp.toUpperCase();
+                asc = (int)temp.charAt(0);
+                
+                if(asc != 32){
+                    numOfLet[asc - 65]++;
+                }
+            
+            }
+        
+        String []words = line.split(" ");
+        
+        
+        //incriments the amount of each type of each length of word
+        for(i = 0; i < words.length; i++){
+            if(numOfLeng[i] != 0){
+                numOfLeng[words[i].length()]++;
+            }
+        }
     }
+        
+    //display everything
     
+}
 }
