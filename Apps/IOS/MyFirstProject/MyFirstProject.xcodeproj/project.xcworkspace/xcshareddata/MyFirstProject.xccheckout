@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BAE00AE2-AA0C-4579-A1E5-2A4E6AADA766</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyFirstProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE724515186A4A73FFD111F32AE872B0A13388B7</key>
+		<string>https://bitbucket.org/ananddtyagi/my-projects.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Apps/IOS/MyFirstProject/MyFirstProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE724515186A4A73FFD111F32AE872B0A13388B7</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/ananddtyagi/my-projects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE724515186A4A73FFD111F32AE872B0A13388B7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE724515186A4A73FFD111F32AE872B0A13388B7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>my-projects</string>
+		</dict>
+	</array>
+</dict>
+</plist>
