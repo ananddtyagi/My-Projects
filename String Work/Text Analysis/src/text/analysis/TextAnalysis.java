@@ -27,8 +27,8 @@ public class TextAnalysis {
         
         String line;
         String temp;
-        int [] numOfLeng = new int[20];
-        int numOfLet[] = new int[26];
+        int [] numOfLeng = new int[20]; //stores how many of which length there are
+        int numOfLet[] = new int[26]; //stores how many of each letter there are
         int i;
         int greatest = 0;
              
@@ -59,18 +59,14 @@ public class TextAnalysis {
         
         String []words = line.split(" ");
         
-        
         //incriments the amount of each type of each length of word
-        for(i = 0; i < words.length; i++){
-            if(numOfLeng[i] != 0){
-                numOfLeng[words[i].length()]++;
-                if(greatest < numOfLeng[words[i].length()]++){
-                    greatest = numOfLeng[words[i].length()]++;;
-                }
-            }
-            
-            
-            
+        for(i = 0; i < words.length; i++){ 
+           
+            numOfLeng[words[i].length()]++;
+
+            if(greatest < words[i].length()){
+                greatest = words[i].length();
+            }  
         }
         
     }
@@ -82,9 +78,9 @@ public class TextAnalysis {
         letter = Character.toString((char)(i+65));
         System.out.println(letter + " " +  numOfLet[i] );
     }
-    
-    for(i = 1; i < greatest; i++){
-        System.out.println("Number of " + (i+1) + " lettered words: " + numOfLeng[i]);
+    System.out.println(greatest);
+    for(i = 0; i < greatest; i++){
+        System.out.println("Number of " + (i+1) + " lettered words: " + numOfLeng[i+1]);
     }
     
     
