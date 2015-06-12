@@ -26,14 +26,12 @@ public class TextAnalysis {
         System.out.println("Please enter something");
         
         String line;
-        String temp;
         int [] numOfLeng = new int[20]; //stores how many of which length there are
         int numOfLet[] = new int[26]; //stores how many of each letter there are
         int i;
         int greatest = 0;
              
-        while (!(temp = a.nextLine()).equals("0")) {//putting the lines into separate strings
-            line = temp;   
+        while (!(line = a.nextLine()).equals("0")) {//putting the lines into separate strings
             
              //takes out all the punctuation
         i = 0;
@@ -42,21 +40,8 @@ public class TextAnalysis {
             line = line.replaceAll("[^a-zA-Z\\s]", "");           
         }
         
-        int asc;
-        
-                
-        for(int b = 0; b < line.length(); b++){
-            
-                //adds how many of each letter there is
-                temp = temp.toUpperCase();
-                asc = (int)temp.charAt(b);
-                
-                if(asc != 32){
-                    numOfLet[asc - 65]++;
-                }
-            
-            }
-        
+        System.out.println(line); //tester
+     
         String []words = line.split(" ");
         
         //incriments the amount of each type of each length of word
@@ -69,6 +54,22 @@ public class TextAnalysis {
             }  
         }
         
+        
+        int asc;
+        line = line.replace(" ", "");
+                
+        for(int b = 0; b < line.length(); b++){
+            
+                //adds how many of each letter there is
+                line = line.toUpperCase();
+                asc = (int)line.charAt(b);
+                
+                if(asc != 32){
+                    System.out.println(asc); //tester
+                    numOfLet[asc - 65]++;
+                }
+            
+            }         
     }
         
     //display everything
