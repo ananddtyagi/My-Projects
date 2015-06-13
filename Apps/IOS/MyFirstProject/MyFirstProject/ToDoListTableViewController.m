@@ -14,15 +14,28 @@
 
 @end
 
+
 @implementation ToDoListTableViewController
+
+-(void)loadInitialData {
+     ToDoItem *item1 = [[ToDoItem alloc] init];
+     item1.itemName = @"Buy milk";
+     [self.toDoItems addObject:item1];
+    
+}
+
 
 -(IBAction)unwindToList:(UIStoryboardSegue *)segue{
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.toDoItems = [[NSMutable alloca] init];
+	
+    self.toDoItems = [[NSMutableArray alloc] init];
+    
+    [super viewDidLoad];
+    self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
