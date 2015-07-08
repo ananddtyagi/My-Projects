@@ -25,21 +25,27 @@ public class ArrayPractice {
        boolean sort = false;
        boolean []charPresent = new boolean [26];
        int temp = 0, i;
+       boolean done = false;
+       String ans = "";
        
        for(i = 0; i < 20; i++){
             lettersAsc[i] = (int)(Math.random() * 25 + 1) + 96;
-            charPresent[lettersAsc[i] - 97] = true;    
-            System.out.println(lettersAsc[i]);
+            charPresent[lettersAsc[i] - 97] = true;            
+       }
+       for(i = 0; i < 20; i++){
+           System.out.println(Character.toString((char)lettersAsc[i]));        
        }
        
+    while(done == false){
+        temp = 0;
+        ans = "";
+        sort = false;
+        
        Arrays.sort(lettersAsc);
        
-       for(i = 0; i < 20; i++){
-           //System.out.println(Character.toString((char)lettersAsc[i]));
-           
-       }
        
-       System.out.println("Which number would you like to check?");
+       
+       System.out.println("Which letter would you like to check?");
        String check = input.next();
        char c = check.charAt(0);
        int asc = (int)c;
@@ -50,8 +56,15 @@ public class ArrayPractice {
        System.out.println("The character is not present");
        }
        
-       
-       
+       System.out.println("Do you want to search for another letter?");
+       ans = input.next();
+       if(ans.equals("No")){
+           done = true;
+       } else {
+           done = false;
+       }
+              
+    }  
       
     }
     
