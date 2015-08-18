@@ -16,8 +16,9 @@ import java.util.Scanner;
 public class ArrayPractice {
 
     /**
-     * @param args the command line arguments
+     * @param args 
      */
+    
     public static void main(String[] args) {
        Random rand = new Random();
        Scanner input = new Scanner(System.in);
@@ -58,7 +59,7 @@ public class ArrayPractice {
        
        System.out.println("Do you want to search for another letter?");
        ans = input.next();
-       if(ans.equals("No")){
+       if(ans.equals("no")){
            done = true;
        } else {
            done = false;
