@@ -40,7 +40,7 @@ public class TextAnalysis {
             line = line.replaceAll("[^a-zA-Z\\s]", "");           
         }
         
-        System.out.println(line); //tester
+        //System.out.println(line); //tester
      
         String []words = line.split(" ");
         
