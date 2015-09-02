@@ -24,7 +24,7 @@ public class TupperSSelfReferentialFormula {
     static int [][] tpc;
     
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Square");
+        JFrame frame = new JFrame("TSRF");
         frame.setVisible(true);
         frame.setSize(1050, 310);
         JButton b1 = new JButton();  
