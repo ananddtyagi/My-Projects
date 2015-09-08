@@ -140,9 +140,9 @@ public class draw extends JPanel {
         }
         
       
-      if(done != true){
+      if(!done){
             w = checkP();
-            System.out.println(w);
+            System.out.println(w + "kjhkjh");
             if(w == 1){
                 System.out.println("You won!");
                 done = true;
