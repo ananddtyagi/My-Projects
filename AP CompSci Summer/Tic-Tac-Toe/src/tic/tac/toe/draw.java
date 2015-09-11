@@ -105,8 +105,9 @@ public class draw extends JPanel {
              }
      
         
-        boolean fc = false; //fc = free coordinate
+        
         int c = 0;
+        
         if(turnC == true){ //NEED TO MAKE THIS BE RANDOM SQUARE, NOT JUST THE NEXT ONE!!!
          
            c = 0;
@@ -146,10 +147,12 @@ public class draw extends JPanel {
             if(w == 1){
                 System.out.println("You won!");
                 done = true;
+                System.out.println("helloooo");
+                w = 3;
             }
-            if(w == 0){
-                
+            if(w == 0){               
                 w = checkC();
+                System.out.println("helloafterwin");
             }   
             if(w == 2){
                 System.out.println("You lost");
@@ -222,9 +225,30 @@ public class draw extends JPanel {
             break outerloop;
         }
      }
+       outerloop:
+       for(int j = 0; j < 3; j++){
+        for(int i = 0; i < 3; i++){
+            System.out.println(i + " " + j);
+         if(coor[i][j] == 1){
+             r++;
+         }
+        }
+        if(r != 3){
+            r = 0;
+        } else {
+            p = 1;
+            break outerloop;
+        }
+              
+     }
     
-             
-     System.out.println(" P" + p);
+     if(coor[0][0] == 1 && coor[1][1] == 1 && coor[2][2] == 1){
+         p = 1;
+     }   
+     if(coor[0][2] == 1 && coor[1][1] == 1 && coor[2][0] == 1){
+         p = 1;
+     }   
+     System.out.println(" P " + p);
         return p;
     }
     
@@ -246,7 +270,28 @@ public class draw extends JPanel {
             break outerloop;
         }
      }
+       outerloop:
+     for(int j = 0; j < 3; j++){
+        for(int i = 0; i < 3; i++){
+            System.out.println(i + " " + j);
+         if(coor[i][j] == 2){
+             r++;
+         }
+        }
+        if(r != 3){
+            r = 0;
+        } else {
+            p = 2;
+            break outerloop;
+        }
+     }
     
+     if(coor[0][0] == 1 && coor[1][1] == 1 && coor[2][2] == 1){
+         p = 2;
+     }   
+     if(coor[0][2] == 1 && coor[1][1] == 1 && coor[2][0] == 1){
+         p = 2;
+     }   
               
      System.out.println(" C" + p);
         return p;
