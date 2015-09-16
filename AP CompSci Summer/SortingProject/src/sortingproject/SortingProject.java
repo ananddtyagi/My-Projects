@@ -48,11 +48,9 @@ public class SortingProject {
             obs[i] = b1.nextLine();
         }
         
-        SortAll(obs, c);
+        SortAll s = new SortAll(obs, c);
+       
 
     }
     
-    static public void SortAll(Object [] a, int j){
-        
-    }
 }
