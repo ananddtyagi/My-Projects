@@ -23,8 +23,7 @@ public class Item {
         price = p;
         quant = 10;   
         reorder = 3;
-        order = ord;
-        
+        order = ord;     
     }
     
     public double totalCost(){

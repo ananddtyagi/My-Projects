@@ -1,0 +1,25 @@
+html, body {
+    background-color: brown;
+
+}
+
+.header .title h1{
+    margin: 0;
+    font-family: "calibri", Garamond, 'Comic Sans';
+
+}
+
+.header {
+    background-color: white;
+    height: 40px;
+}
+
+.book img{
+  height: 250px;
+  width: 200px;
+  margin: 25px;
+  border: 5px solid black;
+  position: relative;
+  float: left;
+  box-shadow: 5px 5px 5px black;
+}

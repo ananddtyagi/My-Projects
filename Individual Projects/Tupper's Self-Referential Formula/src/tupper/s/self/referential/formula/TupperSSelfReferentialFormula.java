@@ -44,8 +44,6 @@ public class TupperSSelfReferentialFormula {
         ButtonPressed bp = new ButtonPressed();
         
         bp.BP(b1, object.gettpc());
-        
-      
     }
 
     

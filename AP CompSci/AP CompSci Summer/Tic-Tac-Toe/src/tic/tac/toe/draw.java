@@ -11,6 +11,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.util.Random;
+import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -19,6 +20,7 @@ import javax.swing.JPanel;
  * @author AnandTyagi
  */
 public class draw extends JPanel {
+    Scanner s;
     BufferedImage img;
     JFrame frame;
 
@@ -83,7 +85,8 @@ public class draw extends JPanel {
                 }       
                 
             });
-             if(done != true){ 
+        
+      if(done != true){ 
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
                 if(coor[i][j] == 1){
@@ -102,7 +105,7 @@ public class draw extends JPanel {
                 }
             }        
         }
-             }
+       }
      
         
         
@@ -143,16 +146,13 @@ public class draw extends JPanel {
       
       if(!done){
             w = checkP();
-            System.out.println(w + "kjhkjh");
             if(w == 1){
                 System.out.println("You won!");
                 done = true;
-                System.out.println("helloooo");
                 w = 3;
             }
             if(w == 0){               
                 w = checkC();
-                System.out.println("helloafterwin");
             }   
             if(w == 2){
                 System.out.println("You lost");
@@ -161,7 +161,7 @@ public class draw extends JPanel {
               w = 0;
        
          }
-        //ADD A CHECK FOR WHEN THE GAME IS WON
+       
         
          
     }

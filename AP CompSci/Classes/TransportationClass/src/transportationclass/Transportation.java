@@ -9,24 +9,55 @@ package transportationclass;
  *
  * @author AnandTyagi
  */
-public abstract class Transportation {
-    private double dist;
-    private int src, dest;
+public abstract class Transportation implements Comparable{
+    static private double speed, time, cost;
+    static private int src, dest, dist;
     
-    public double getDist(){
-        return dist;
+    
+    public Transportation(int de, int di, int s){
+        dest = de;
+        dist = di;
+        src = s;
+    }
+   
+    public abstract double calcTime(double s, int dist);
+    
+    public abstract double calcCost(double r);
+    
+    public abstract void setCost(double c);
+    
+    public abstract double getCost();
+    
+    public int compareTo(Rail o){
+        int re = 0;
+        if(this.getCost() < o.getCost()){
+            re = 1;
+        }
+        return re;
+    }
+    public int compareTo(Ground o){
+        int re = 0;
+        if(this.getCost() < o.getCost()){
+            re = 1;
+        }
+        return re;
     }
     
-    public double getDest(){
-        return dest;
+    public int compareTo(Sea o){
+        int re = 0;
+        if(this.getCost() < o.getCost()){
+            re = 1;
+        }
+        return re; 
+    }
+    public int compareTo(Air o){
+        int re = 0;
+        if(this.getCost() < o.getCost()){
+            re = 1;
+        }
+        return re;
     }
     
-    public double getSrc(){
-        return src;
-    }
-    
-    public abstract void calcTime();
-    
-    public abstract void calcCost();
+   
     
 }
