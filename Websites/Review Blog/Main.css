@@ -6,13 +6,9 @@ html, body {
 .header .title h1{
     margin: 0;
     font-family: "calibri", Garamond, 'Comic Sans';
-
+    background-color: crimson;
 }
 
-.header {
-    background-color: white;
-    height: 40px;
-}
 
 .book img{
   height: 250px;
