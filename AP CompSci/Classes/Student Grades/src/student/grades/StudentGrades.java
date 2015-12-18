@@ -21,7 +21,7 @@ public class StudentGrades {
     public static void main(String[] args) throws FileNotFoundException {
         File f = new File("StudentGrades");
         Scanner file = new Scanner(f);
-        
+            
         
     }
     
