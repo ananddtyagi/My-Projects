@@ -17,13 +17,16 @@ public class Project_Container {
     public static void main(String[] args) {
        
         
-        Container [] c = new Container[3];
+        Container<String> c = new Container<String>();
         
-        c[0] = new Container<Integer>(2);
-        c[1] = new Container<String>("hello");
+        c.add("hello");
+        c.add("hi");
+        c.add("asdf");
+        c.remove(0);
         
-        for(Container x: c){
-            System.out.println(x.gett1());
+        
+        for(String s: c.getArray()){
+            System.out.println(s);
         }
               
     }

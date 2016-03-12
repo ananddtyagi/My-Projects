@@ -40,15 +40,15 @@ public class MachineLearning {
         String uQ  = "I do not understand that response. Does that fall under "
                 + "1. \"yes\" or 2. \"no\" (Please enter the correct number)"; //uQ = understanding Question
         boolean found = false;
-        
+        int qAns;
         while(q.hasNext()){
             questions(q);
             resp.next();
             ans = resp.nextLine();
-            found = respAnalysis(yes, no, ans);
+            found = respAnalysis(ans);
             if(!found){
-            System.out.println(uQ);            
-            int qAns = resp.nextInt(); //qAns = the question's answer
+                System.out.println(uQ);            
+                qAns = resp.nextInt(); //qAns = the question's answer
             AddToFile(qAns, ans);
         }
             
@@ -62,8 +62,18 @@ public class MachineLearning {
        System.out.println(q.next());
     } 
     
-    public static boolean respAnalysis(Scanner yes, Scanner no, String ans){
+    public static boolean respAnalysis(String ans) throws FileNotFoundException{
         boolean found = false;
+        File y = new File("Yes.txt");
+        File n = new File("No.txt");
+        File qs = new File("Questions.txt");
+        Scanner yes = new Scanner(y);
+        Scanner no  = new Scanner(n);
+        Scanner q = new Scanner(qs);
+        yes = yes.useDelimiter("\n");
+        no = no.useDelimiter("\n");
+        q = q.useDelimiter("\n");
+        
         if(!ans.equals("Yes") && !ans.equals("No")){  
             while(yes.hasNextLine()){
                 if(yes.nextLine().equals(ans)){

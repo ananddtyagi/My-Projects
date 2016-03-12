@@ -5,6 +5,8 @@
  */
 package project_container;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author AnandTyagi
@@ -12,17 +14,31 @@ package project_container;
 public class Container <T1>{
     
     private T1 t1;
+    ArrayList<T1> obj = new ArrayList<T1>();
+    
+    public Container(){
+        
+    }
     
     public Container(T1 t1){
         this.t1 = t1;       
+       
     }
     
     public T1 gett1(){
         return t1;
     }
     
-    public String toString(){
-        return t1.toString();
+    public void add(T1 t){
+        obj.add(t);
+    }
+    
+    public void remove(int i){
+        obj.remove(i);
+    }
+    
+    public ArrayList<T1> getArray(){
+        return obj;
     }
     
     
