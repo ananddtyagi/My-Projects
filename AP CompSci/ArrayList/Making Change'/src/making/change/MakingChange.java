@@ -34,9 +34,9 @@ public class MakingChange {
         
     }
         
-    static public int Cents(int t, int q, int d, int n){
+    static public int Cents(int t, int q, int d, int n) {
         
-        
+        System.out.println(q + " " + d + " " + n);
         if(q > 0){
             if(d > 0){
                 if(n > 0){
@@ -70,12 +70,13 @@ public class MakingChange {
                 }
             }
         }
-       
+         
         c++;
         if(q == 0 && d == 0 && n == 0){
             c++;
             return c;
         } else {           
+          
             return Cents(t, q, d, n);
            
         }
