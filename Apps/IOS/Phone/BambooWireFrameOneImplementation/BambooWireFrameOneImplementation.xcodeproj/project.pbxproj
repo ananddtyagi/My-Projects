@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30632C801D2EC8A200C7253D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30632C7F1D2EC8A200C7253D /* AppDelegate.swift */; };
+		30632C821D2EC8A200C7253D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30632C811D2EC8A200C7253D /* ViewController.swift */; };
+		30632C851D2EC8A200C7253D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30632C831D2EC8A200C7253D /* Main.storyboard */; };
+		30632C8A1D2EC8A200C7253D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30632C881D2EC8A200C7253D /* LaunchScreen.storyboard */; };
+		30632C951D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30632C941D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.swift */; };
+		30632CA01D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30632C9F1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.swift */; };
+		30632CAE1D2EEB0100C7253D /* Spring in Resources */ = {isa = PBXBuildFile; fileRef = 30632CAD1D2EEB0100C7253D /* Spring */; };
+		308BB3AD1D2FE0B3004B30D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308BB3AC1D2FE0B3004B30D5 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30632C911D2EC8A200C7253D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30632C741D2EC8A200C7253D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30632C7B1D2EC8A200C7253D;
+			remoteInfo = BambooWireFrameOneImplementation;
+		};
+		30632C9C1D2EC8A200C7253D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30632C741D2EC8A200C7253D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30632C7B1D2EC8A200C7253D;
+			remoteInfo = BambooWireFrameOneImplementation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30632C7C1D2EC8A200C7253D /* BambooWireFrameOneImplementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BambooWireFrameOneImplementation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30632C7F1D2EC8A200C7253D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30632C811D2EC8A200C7253D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30632C841D2EC8A200C7253D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30632C891D2EC8A200C7253D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30632C8B1D2EC8A200C7253D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30632C901D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BambooWireFrameOneImplementationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30632C941D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BambooWireFrameOneImplementationTests.swift; sourceTree = "<group>"; };
+		30632C961D2EC8A200C7253D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30632C9B1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BambooWireFrameOneImplementationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30632C9F1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BambooWireFrameOneImplementationUITests.swift; sourceTree = "<group>"; };
+		30632CA11D2EC8A200C7253D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30632CAD1D2EEB0100C7253D /* Spring */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Spring; sourceTree = "<group>"; };
+		308BB3AC1D2FE0B3004B30D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30632C791D2EC8A200C7253D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30632C8D1D2EC8A200C7253D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30632C981D2EC8A200C7253D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30632C731D2EC8A200C7253D = {
+			isa = PBXGroup;
+			children = (
+				30632C7E1D2EC8A200C7253D /* BambooWireFrameOneImplementation */,
+				30632C931D2EC8A200C7253D /* BambooWireFrameOneImplementationTests */,
+				30632C9E1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests */,
+				30632C7D1D2EC8A200C7253D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30632C7D1D2EC8A200C7253D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30632C7C1D2EC8A200C7253D /* BambooWireFrameOneImplementation.app */,
+				30632C901D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.xctest */,
+				30632C9B1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30632C7E1D2EC8A200C7253D /* BambooWireFrameOneImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				30632CAD1D2EEB0100C7253D /* Spring */,
+				30632C7F1D2EC8A200C7253D /* AppDelegate.swift */,
+				30632C811D2EC8A200C7253D /* ViewController.swift */,
+				30632C831D2EC8A200C7253D /* Main.storyboard */,
+				308BB3AC1D2FE0B3004B30D5 /* Images.xcassets */,
+				30632C881D2EC8A200C7253D /* LaunchScreen.storyboard */,
+				30632C8B1D2EC8A200C7253D /* Info.plist */,
+			);
+			path = BambooWireFrameOneImplementation;
+			sourceTree = "<group>";
+		};
+		30632C931D2EC8A200C7253D /* BambooWireFrameOneImplementationTests */ = {
+			isa = PBXGroup;
+			children = (
+				30632C941D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.swift */,
+				30632C961D2EC8A200C7253D /* Info.plist */,
+			);
+			path = BambooWireFrameOneImplementationTests;
+			sourceTree = "<group>";
+		};
+		30632C9E1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30632C9F1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.swift */,
+				30632CA11D2EC8A200C7253D /* Info.plist */,
+			);
+			path = BambooWireFrameOneImplementationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30632C7B1D2EC8A200C7253D /* BambooWireFrameOneImplementation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30632CA41D2EC8A200C7253D /* Build configuration list for PBXNativeTarget "BambooWireFrameOneImplementation" */;
+			buildPhases = (
+				30632C781D2EC8A200C7253D /* Sources */,
+				30632C791D2EC8A200C7253D /* Frameworks */,
+				30632C7A1D2EC8A200C7253D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BambooWireFrameOneImplementation;
+			productName = BambooWireFrameOneImplementation;
+			productReference = 30632C7C1D2EC8A200C7253D /* BambooWireFrameOneImplementation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30632C8F1D2EC8A200C7253D /* BambooWireFrameOneImplementationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30632CA71D2EC8A200C7253D /* Build configuration list for PBXNativeTarget "BambooWireFrameOneImplementationTests" */;
+			buildPhases = (
+				30632C8C1D2EC8A200C7253D /* Sources */,
+				30632C8D1D2EC8A200C7253D /* Frameworks */,
+				30632C8E1D2EC8A200C7253D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30632C921D2EC8A200C7253D /* PBXTargetDependency */,
+			);
+			name = BambooWireFrameOneImplementationTests;
+			productName = BambooWireFrameOneImplementationTests;
+			productReference = 30632C901D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30632C9A1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30632CAA1D2EC8A200C7253D /* Build configuration list for PBXNativeTarget "BambooWireFrameOneImplementationUITests" */;
+			buildPhases = (
+				30632C971D2EC8A200C7253D /* Sources */,
+				30632C981D2EC8A200C7253D /* Frameworks */,
+				30632C991D2EC8A200C7253D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30632C9D1D2EC8A200C7253D /* PBXTargetDependency */,
+			);
+			name = BambooWireFrameOneImplementationUITests;
+			productName = BambooWireFrameOneImplementationUITests;
+			productReference = 30632C9B1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30632C741D2EC8A200C7253D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Anand Tyagi";
+				TargetAttributes = {
+					30632C7B1D2EC8A200C7253D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					30632C8F1D2EC8A200C7253D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 30632C7B1D2EC8A200C7253D;
+					};
+					30632C9A1D2EC8A200C7253D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 30632C7B1D2EC8A200C7253D;
+					};
+				};
+			};
+			buildConfigurationList = 30632C771D2EC8A200C7253D /* Build configuration list for PBXProject "BambooWireFrameOneImplementation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30632C731D2EC8A200C7253D;
+			productRefGroup = 30632C7D1D2EC8A200C7253D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30632C7B1D2EC8A200C7253D /* BambooWireFrameOneImplementation */,
+				30632C8F1D2EC8A200C7253D /* BambooWireFrameOneImplementationTests */,
+				30632C9A1D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30632C7A1D2EC8A200C7253D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30632C8A1D2EC8A200C7253D /* LaunchScreen.storyboard in Resources */,
+				308BB3AD1D2FE0B3004B30D5 /* Images.xcassets in Resources */,
+				30632CAE1D2EEB0100C7253D /* Spring in Resources */,
+				30632C851D2EC8A200C7253D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30632C8E1D2EC8A200C7253D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30632C991D2EC8A200C7253D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30632C781D2EC8A200C7253D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30632C821D2EC8A200C7253D /* ViewController.swift in Sources */,
+				30632C801D2EC8A200C7253D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30632C8C1D2EC8A200C7253D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30632C951D2EC8A200C7253D /* BambooWireFrameOneImplementationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30632C971D2EC8A200C7253D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30632CA01D2EC8A200C7253D /* BambooWireFrameOneImplementationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30632C921D2EC8A200C7253D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30632C7B1D2EC8A200C7253D /* BambooWireFrameOneImplementation */;
+			targetProxy = 30632C911D2EC8A200C7253D /* PBXContainerItemProxy */;
+		};
+		30632C9D1D2EC8A200C7253D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30632C7B1D2EC8A200C7253D /* BambooWireFrameOneImplementation */;
+			targetProxy = 30632C9C1D2EC8A200C7253D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30632C831D2EC8A200C7253D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30632C841D2EC8A200C7253D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30632C881D2EC8A200C7253D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30632C891D2EC8A200C7253D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30632CA21D2EC8A200C7253D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30632CA31D2EC8A200C7253D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30632CA51D2EC8A200C7253D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BambooWireFrameOneImplementation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.BambooWireFrameOneImplementation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30632CA61D2EC8A200C7253D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BambooWireFrameOneImplementation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.BambooWireFrameOneImplementation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		30632CA81D2EC8A200C7253D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BambooWireFrameOneImplementationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.BambooWireFrameOneImplementationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BambooWireFrameOneImplementation.app/BambooWireFrameOneImplementation";
+			};
+			name = Debug;
+		};
+		30632CA91D2EC8A200C7253D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BambooWireFrameOneImplementationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.BambooWireFrameOneImplementationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BambooWireFrameOneImplementation.app/BambooWireFrameOneImplementation";
+			};
+			name = Release;
+		};
+		30632CAB1D2EC8A200C7253D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BambooWireFrameOneImplementationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.BambooWireFrameOneImplementationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BambooWireFrameOneImplementation;
+			};
+			name = Debug;
+		};
+		30632CAC1D2EC8A200C7253D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BambooWireFrameOneImplementationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.BambooWireFrameOneImplementationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BambooWireFrameOneImplementation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30632C771D2EC8A200C7253D /* Build configuration list for PBXProject "BambooWireFrameOneImplementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30632CA21D2EC8A200C7253D /* Debug */,
+				30632CA31D2EC8A200C7253D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30632CA41D2EC8A200C7253D /* Build configuration list for PBXNativeTarget "BambooWireFrameOneImplementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30632CA51D2EC8A200C7253D /* Debug */,
+				30632CA61D2EC8A200C7253D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30632CA71D2EC8A200C7253D /* Build configuration list for PBXNativeTarget "BambooWireFrameOneImplementationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30632CA81D2EC8A200C7253D /* Debug */,
+				30632CA91D2EC8A200C7253D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30632CAA1D2EC8A200C7253D /* Build configuration list for PBXNativeTarget "BambooWireFrameOneImplementationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30632CAB1D2EC8A200C7253D /* Debug */,
+				30632CAC1D2EC8A200C7253D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30632C741D2EC8A200C7253D /* Project object */;
+}
