@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30E0A9B81EDFDEF20040E617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0A9B71EDFDEF20040E617 /* AppDelegate.swift */; };
+		30E0A9BA1EDFDEF20040E617 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0A9B91EDFDEF20040E617 /* ViewController.swift */; };
+		30E0A9BD1EDFDEF20040E617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E0A9BB1EDFDEF20040E617 /* Main.storyboard */; };
+		30E0A9BF1EDFDEF20040E617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E0A9BE1EDFDEF20040E617 /* Assets.xcassets */; };
+		30E0A9C21EDFDEF20040E617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E0A9C01EDFDEF20040E617 /* LaunchScreen.storyboard */; };
+		30E0A9CD1EDFDEF20040E617 /* StroageIdeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0A9CC1EDFDEF20040E617 /* StroageIdeaTests.swift */; };
+		30E0A9D81EDFDEF20040E617 /* StroageIdeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E0A9D71EDFDEF20040E617 /* StroageIdeaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30E0A9C91EDFDEF20040E617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E0A9AC1EDFDEF20040E617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30E0A9B31EDFDEF20040E617;
+			remoteInfo = StroageIdea;
+		};
+		30E0A9D41EDFDEF20040E617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E0A9AC1EDFDEF20040E617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30E0A9B31EDFDEF20040E617;
+			remoteInfo = StroageIdea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30E0A9B41EDFDEF20040E617 /* StroageIdea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StroageIdea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E0A9B71EDFDEF20040E617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30E0A9B91EDFDEF20040E617 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30E0A9BC1EDFDEF20040E617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30E0A9BE1EDFDEF20040E617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30E0A9C11EDFDEF20040E617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30E0A9C31EDFDEF20040E617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E0A9C81EDFDEF20040E617 /* StroageIdeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StroageIdeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E0A9CC1EDFDEF20040E617 /* StroageIdeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroageIdeaTests.swift; sourceTree = "<group>"; };
+		30E0A9CE1EDFDEF20040E617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E0A9D31EDFDEF20040E617 /* StroageIdeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StroageIdeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E0A9D71EDFDEF20040E617 /* StroageIdeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroageIdeaUITests.swift; sourceTree = "<group>"; };
+		30E0A9D91EDFDEF20040E617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30E0A9B11EDFDEF20040E617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E0A9C51EDFDEF20040E617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E0A9D01EDFDEF20040E617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E0A9AB1EDFDEF20040E617 = {
+			isa = PBXGroup;
+			children = (
+				30E0A9B61EDFDEF20040E617 /* StroageIdea */,
+				30E0A9CB1EDFDEF20040E617 /* StroageIdeaTests */,
+				30E0A9D61EDFDEF20040E617 /* StroageIdeaUITests */,
+				30E0A9B51EDFDEF20040E617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30E0A9B51EDFDEF20040E617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30E0A9B41EDFDEF20040E617 /* StroageIdea.app */,
+				30E0A9C81EDFDEF20040E617 /* StroageIdeaTests.xctest */,
+				30E0A9D31EDFDEF20040E617 /* StroageIdeaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30E0A9B61EDFDEF20040E617 /* StroageIdea */ = {
+			isa = PBXGroup;
+			children = (
+				30E0A9B71EDFDEF20040E617 /* AppDelegate.swift */,
+				30E0A9B91EDFDEF20040E617 /* ViewController.swift */,
+				30E0A9BB1EDFDEF20040E617 /* Main.storyboard */,
+				30E0A9BE1EDFDEF20040E617 /* Assets.xcassets */,
+				30E0A9C01EDFDEF20040E617 /* LaunchScreen.storyboard */,
+				30E0A9C31EDFDEF20040E617 /* Info.plist */,
+			);
+			path = StroageIdea;
+			sourceTree = "<group>";
+		};
+		30E0A9CB1EDFDEF20040E617 /* StroageIdeaTests */ = {
+			isa = PBXGroup;
+			children = (
+				30E0A9CC1EDFDEF20040E617 /* StroageIdeaTests.swift */,
+				30E0A9CE1EDFDEF20040E617 /* Info.plist */,
+			);
+			path = StroageIdeaTests;
+			sourceTree = "<group>";
+		};
+		30E0A9D61EDFDEF20040E617 /* StroageIdeaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30E0A9D71EDFDEF20040E617 /* StroageIdeaUITests.swift */,
+				30E0A9D91EDFDEF20040E617 /* Info.plist */,
+			);
+			path = StroageIdeaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30E0A9B31EDFDEF20040E617 /* StroageIdea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E0A9DC1EDFDEF20040E617 /* Build configuration list for PBXNativeTarget "StroageIdea" */;
+			buildPhases = (
+				30E0A9B01EDFDEF20040E617 /* Sources */,
+				30E0A9B11EDFDEF20040E617 /* Frameworks */,
+				30E0A9B21EDFDEF20040E617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StroageIdea;
+			productName = StroageIdea;
+			productReference = 30E0A9B41EDFDEF20040E617 /* StroageIdea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30E0A9C71EDFDEF20040E617 /* StroageIdeaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E0A9DF1EDFDEF20040E617 /* Build configuration list for PBXNativeTarget "StroageIdeaTests" */;
+			buildPhases = (
+				30E0A9C41EDFDEF20040E617 /* Sources */,
+				30E0A9C51EDFDEF20040E617 /* Frameworks */,
+				30E0A9C61EDFDEF20040E617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30E0A9CA1EDFDEF20040E617 /* PBXTargetDependency */,
+			);
+			name = StroageIdeaTests;
+			productName = StroageIdeaTests;
+			productReference = 30E0A9C81EDFDEF20040E617 /* StroageIdeaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30E0A9D21EDFDEF20040E617 /* StroageIdeaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E0A9E21EDFDEF20040E617 /* Build configuration list for PBXNativeTarget "StroageIdeaUITests" */;
+			buildPhases = (
+				30E0A9CF1EDFDEF20040E617 /* Sources */,
+				30E0A9D01EDFDEF20040E617 /* Frameworks */,
+				30E0A9D11EDFDEF20040E617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30E0A9D51EDFDEF20040E617 /* PBXTargetDependency */,
+			);
+			name = StroageIdeaUITests;
+			productName = StroageIdeaUITests;
+			productReference = 30E0A9D31EDFDEF20040E617 /* StroageIdeaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30E0A9AC1EDFDEF20040E617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Anand Tyagi";
+				TargetAttributes = {
+					30E0A9B31EDFDEF20040E617 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6GJRBU622M;
+						ProvisioningStyle = Automatic;
+					};
+					30E0A9C71EDFDEF20040E617 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30E0A9B31EDFDEF20040E617;
+					};
+					30E0A9D21EDFDEF20040E617 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30E0A9B31EDFDEF20040E617;
+					};
+				};
+			};
+			buildConfigurationList = 30E0A9AF1EDFDEF20040E617 /* Build configuration list for PBXProject "StroageIdea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30E0A9AB1EDFDEF20040E617;
+			productRefGroup = 30E0A9B51EDFDEF20040E617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30E0A9B31EDFDEF20040E617 /* StroageIdea */,
+				30E0A9C71EDFDEF20040E617 /* StroageIdeaTests */,
+				30E0A9D21EDFDEF20040E617 /* StroageIdeaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30E0A9B21EDFDEF20040E617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E0A9C21EDFDEF20040E617 /* LaunchScreen.storyboard in Resources */,
+				30E0A9BF1EDFDEF20040E617 /* Assets.xcassets in Resources */,
+				30E0A9BD1EDFDEF20040E617 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E0A9C61EDFDEF20040E617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E0A9D11EDFDEF20040E617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30E0A9B01EDFDEF20040E617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E0A9BA1EDFDEF20040E617 /* ViewController.swift in Sources */,
+				30E0A9B81EDFDEF20040E617 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E0A9C41EDFDEF20040E617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E0A9CD1EDFDEF20040E617 /* StroageIdeaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E0A9CF1EDFDEF20040E617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E0A9D81EDFDEF20040E617 /* StroageIdeaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30E0A9CA1EDFDEF20040E617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30E0A9B31EDFDEF20040E617 /* StroageIdea */;
+			targetProxy = 30E0A9C91EDFDEF20040E617 /* PBXContainerItemProxy */;
+		};
+		30E0A9D51EDFDEF20040E617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30E0A9B31EDFDEF20040E617 /* StroageIdea */;
+			targetProxy = 30E0A9D41EDFDEF20040E617 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30E0A9BB1EDFDEF20040E617 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30E0A9BC1EDFDEF20040E617 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30E0A9C01EDFDEF20040E617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30E0A9C11EDFDEF20040E617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30E0A9DA1EDFDEF20040E617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30E0A9DB1EDFDEF20040E617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30E0A9DD1EDFDEF20040E617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6GJRBU622M;
+				INFOPLIST_FILE = StroageIdea/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.StroageIdea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		30E0A9DE1EDFDEF20040E617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6GJRBU622M;
+				INFOPLIST_FILE = StroageIdea/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.StroageIdea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		30E0A9E01EDFDEF20040E617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StroageIdeaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.StroageIdeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StroageIdea.app/StroageIdea";
+			};
+			name = Debug;
+		};
+		30E0A9E11EDFDEF20040E617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StroageIdeaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.StroageIdeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StroageIdea.app/StroageIdea";
+			};
+			name = Release;
+		};
+		30E0A9E31EDFDEF20040E617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = StroageIdeaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.StroageIdeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StroageIdea;
+			};
+			name = Debug;
+		};
+		30E0A9E41EDFDEF20040E617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = StroageIdeaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anand.Tyagi.StroageIdeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StroageIdea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30E0A9AF1EDFDEF20040E617 /* Build configuration list for PBXProject "StroageIdea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E0A9DA1EDFDEF20040E617 /* Debug */,
+				30E0A9DB1EDFDEF20040E617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30E0A9DC1EDFDEF20040E617 /* Build configuration list for PBXNativeTarget "StroageIdea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E0A9DD1EDFDEF20040E617 /* Debug */,
+				30E0A9DE1EDFDEF20040E617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30E0A9DF1EDFDEF20040E617 /* Build configuration list for PBXNativeTarget "StroageIdeaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E0A9E01EDFDEF20040E617 /* Debug */,
+				30E0A9E11EDFDEF20040E617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30E0A9E21EDFDEF20040E617 /* Build configuration list for PBXNativeTarget "StroageIdeaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E0A9E31EDFDEF20040E617 /* Debug */,
+				30E0A9E41EDFDEF20040E617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30E0A9AC1EDFDEF20040E617 /* Project object */;
+}

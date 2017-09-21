@@ -49,6 +49,7 @@ public class Enigma {
         reflector[0] = alphabet;
         reflector[1] = alphabet;
         
+        
         System.out.println("Please enter encoded message equal to \"Hello, World\" ");
         String s = in.nextLine().toLowerCase();
         System.out.println(DetermineRotorSettings(s, rotor1, rotor2, rotor3, reflector));

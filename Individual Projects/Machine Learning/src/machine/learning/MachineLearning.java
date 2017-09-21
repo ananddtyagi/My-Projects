@@ -6,6 +6,7 @@
 package machine.learning;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -34,7 +35,7 @@ public class MachineLearning {
         String ans;
         
         //prompt
-        System.out.println("I will be learning different form of yes and no through"
+        System.out.println("I will be learning the difference between yes and no through"
                 + "a series of questions I ask you");
         
         String uQ  = "I do not understand that response. Does that fall under "
@@ -63,6 +64,7 @@ public class MachineLearning {
     } 
     
     public static boolean respAnalysis(String ans) throws FileNotFoundException{
+     while (true){
         boolean found = false;
         File y = new File("Yes.txt");
         File n = new File("No.txt");
@@ -73,24 +75,30 @@ public class MachineLearning {
         yes = yes.useDelimiter("\n");
         no = no.useDelimiter("\n");
         q = q.useDelimiter("\n");
-        
-        if(!ans.equals("Yes") && !ans.equals("No")){  
-            while(yes.hasNextLine()){
-                if(yes.nextLine().equals(ans)){
-                    found = true;
-                }       
-            }
-            if(!found){
-               while(no.hasNextLine()){
-                   if(no.nextLine().equals(ans)){
-                       found = true;
-                   }
-               } 
-            }
+        ArrayList x = new ArrayList();
+          while(yes.hasNextLine()){
+              x.add(yes.nextLine());
+          }
+          for(int i = 0; i < x.size(); i++){
+              System.out.println(x.get(i));
+          }
+        while(yes.hasNextLine()){
+            if(yes.nextLine().equals(ans)){
+                found = true;
+            }       
+        }
+        if(!found){
+           while(no.hasNextLine()){
+               if(no.nextLine().equals(ans)){
+                   found = true;
+               }
+           } 
+        }
             
-        } 
+       
         System.out.println(found);
         return found;
+     }
     }
     
     public static void AddToFile(int qAns, String ans){

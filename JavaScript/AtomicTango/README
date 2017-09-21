@@ -1,0 +1,227 @@
+Atomic Tango
+
+Motivation: Students of tango (especially leaders) seem to face
+a daunting task of learning countless sequences.
+Most teachers feed into this idea by building classes
+around one or more sequences. The net result is that
+one has to take an indefinite number of classes and then
+one has the hope of understanding the whole by osmosis.
+
+We want to speed this process up by breaking things down.
+In this we are inspired by our teacher Tomas Corbalan.
+We call this atomic tango.
+
+Atomic tango breaks down each sequence into individual moves
+such as weight change, rotation, extension part of a forward step,
+extension part of a side step,
+volcada, colcada, boleo etc.
+The idea is that each move transforms the couple from one
+state to another.
+There aren't too many constraints, the main one being that
+the follower can't hop, e.g. move from her left foot to a different
+position on her left foot directly (though she could
+be lifted).
+
+The key idea is how to define a state.
+Here we give the basic parameters of a state described as a set
+of discrete values. Of course the dance is continuous, so individuals
+may interpret this in different ways.
+
+state consists of eight parameters but the first seven are crucial
+
+i) position of woman relative to man: north, northwest, northeast, etc
+Comment: north is in front of man, south is behind the man etc.
+
+ii) facing relative to man: (towards, away, clockwise, counterclockwise)
+Comment: towards mean the woman is facing the man; clockwise means that
+if the man is the center of a clock and she is the second hand then she
+is facing in the direction of movement of the second hand.
+
+iii) weighted foot: none/left/right
+Comment: which foot of the woman has weight. None means a lift.
+
+iv) unweighted foot: collected/crossed left forward/crossed right forward/forward/backward/in air forward/in air back/slid out
+Comment: the unweighted foot could be collected, in a cross position
+(either in front or back) etc.
+
+
+v) leaning: neutral/away/towards
+Comment: is the woman vertical or leaning either towards or away
+from the man.
+
+vi) foot contact: none/manfoot_inside_femalefoot/manfoot_outside_femalefoot
+Comment: is the man's foot touching the woman's foot and if so
+which foot in both cases and is the foot on the outside or inside.
+This captures all paradas.
+
+vii) thigh contact:none/leg man back to leg woman  back /leg man front to leg woman  back /leg man back to leg woman  front
+
+Comment: ganchos can be lower thigh to lower thigh, upper thigh
+to lower thigh etc. Only one that isn't possible is upper to upper.
+
+viii) height: high/low
+
+Comment: Is the couple very low, very high (e.g. for milonga), or
+normal.
+
+How does this help? Well think of each move as a transformation
+and then we can ask which moves are possible in each state.
+
+sidestep(rightleft):
+  precondition: woman either facing towards or away
+  she must be collected
+  move in direction of unweighted foot
+  state change: a foot extends
+
+rotate(direction (clockwise or counterclockwise))
+  precondition: []
+  rotate
+  only the facing parameter changes
+
+gancho(direction (clockwise or counterclockwise), loworup)
+  if facing towards and woman on the right foot and clockwise direction
+  and loworup == up
+   then this is a classic
+     woman's left leg wrap around the man's right leg.
+  if facing towards and woman on the right foot and clockwise direction
+  and loworup == down
+  ` then man must lift his leg to allow woman to come in
+        possible but unusual
+  if facing towards and woman on the left foot and clockwise direction
+  and loworup == up
+    then this is a roundhouse kick basically
+  --- symmetrically for the left foot and facing towards
+  --- symmetrically for facing away
+
+gancho(direction)
+  perform the rotation and
+
+
+If all we want to know is which sequences are possible, then we don't
+need to know the couple position.
+Right forward entrada for example rotates the couple but at the end
+of the move, she's facing him and she is on her right foot while he is too.
+So we do need to know which foot the leader is on to know which foot is next.
+
+move(initialstate, finalstate)
+
+
+For a gancho to be possible the female leg must be off weight before the gancho
+and it must be possible to get to the destination just by rotation or lift.
+
+What can one do from a cross: rotate, forward step, back kick
+
+kicks can be forward or back
+
+
+
+gancho:
+
+initial:
+position: southwest
+facing: away
+weighted foot: right
+unweighted foot: collected
+leaning: neutral
+foot contact: man right outside female left
+thigh contact: none:
+
+
+final:
+position: southwest
+facing: away
+weighted foot: right
+unweighted foot: collected
+leaning: neutral
+foot contact: man right outside female left
+thigh contact: left man back to left woman back
+
+
+
+possible to do a left male leg over left female leg.
+
+drag can be either direction.
+
+backcross
+
+parada
+
+
+volcado: facing, right foot, to cross.
+
+leader weight change
+
+rotate clockwise only works if she is on her left foot.
+
+forward outside step
+
+rotate counterclockwise
+
+dip
+
+kick: she is east, clockwise, on left leg, kick is of the right foot.
+
+left leg to right leg goncho
+
+right leg to right leg goncho while perpendicular
+
+left leg to left leg goncho while facing away
+
+right leg to left leg goncho
+
+sequence: face east, forward step to right foot, rotate
+clockwise to face then side step to left foot, rotate clockwise
+so facing away on right foot, rotate counterclockwise to face.
+
+
+
+
+wrapping gancho
+
+leg caress
+
+northwest right foot to left foot east lift
+
+east right foot to center west-facing lift (perhaps with steps)
+
+east counterclockwise- left foot to right leg to left hip goncho.
+
+arm spin -- just a rotation using the arm.
+
+back kick or front kick -- must be facing east or west. Usually with the
+inside leg.
+
+left foot drag -- right foot is placed and this one pushed one way or the other. End
+position is facing or is east
+
+colgada: right foot to right foot she is east and counterclockwise.
+Could we do left side to left foot.
+
+entrada: north, clockwise, right foot forward, so we entrada between her legs
+or north, counterclockwise, left foot forward, entrada between her legs
+
+front boleo
+
+forward step
+
+
+ocho cortado:
+Bring follower to a cross when she's on her right leg with her legs
+separated. The move is a counterclockwise twist.
+
+Then how do we model a sacada and an entrada?
+She's got to have her legs separated and leader puts either a forward or
+back leg between her legs.
+Whole couple rotates.
+
+sidestep: shift weight
+couple position shifts to leg that will be final destination.
+
+I guess though the point is what happens to the woman -- in the case of
+the colgada, she goes out a bit with her outside foot.
+
+For an entrada, she is just rotating.
+
+For a sacada, she does a
+rotation, but the whole couple rotates.
+How do we model that?

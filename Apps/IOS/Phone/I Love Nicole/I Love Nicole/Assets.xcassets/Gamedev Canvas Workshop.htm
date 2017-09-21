@@ -1,0 +1,49 @@
+
+<!-- saved from url=(0087)file:///Users/AnandTyagi/Desktop/Coding/my-projects/JavaScript/Learning%20JS/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Gamedev Canvas Workshop</title>
+    <style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 2;
+var dy = -2;
+
+function drawBall(){
+  ctx.beginPath();
+  ctx.rect(x, y, 10, 0);
+  ctx.fillStyle = "#0095DD";
+  ctx.fill();
+  ctx.closePath();
+}
+
+function draw() {
+
+  ctx.clearRect(0,0,canvas.width, canvas.height);
+
+  x += dx;
+  y += dy;
+
+}
+
+setInterval(draw, 10);
+
+</script>
+
+
+''
+</body></html>

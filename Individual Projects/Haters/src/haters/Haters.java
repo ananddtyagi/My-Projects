@@ -23,7 +23,7 @@ public class Haters {
         empty[1] = "You are going to community college";
         empty[2] = "You're a nobody";
         empty[3] = "You're worthless";
-        empty[4] = "You stupid";
+        empty[4] = "You're stupid";
         empty[5] = "You can't do anything";
         empty[6] = "You'll never be successful";
         
