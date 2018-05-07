@@ -10,7 +10,7 @@ static int countWays(int S[], int n)
         }
 
         for(int i = 0; i < n+1; i++){ //finding all of the mininum number of coins it will take to sum up to all indicies i
-          for(int j = 0; j < 3; j++){ //goes through each denomination
+          for(int j = 0; j < 5; j++){ //goes through each denomination
 
             if (i - S[j] == 0) { //if the index is one of the denominations,
               ref[i] = 1; //the number of coins it will take to make that number is 1.
@@ -36,7 +36,7 @@ static int countWays(int S[], int n)
         int j = 0;
         int total = n; //so we can store the original total somewhere
         while(ref[n] != 1){ //until we reach one of the denominations
-          for(int i = 0; i < 3; i++){ //goes through each denomination
+          for(int i = 0; i < 5; i++){ //goes through each denomination
             if(ref[n - S[i]] == ref[n] - 1){ //checks ref at some previous index that is the current index - a denomination, if the number of coins it took to make that previous index is 1- the number of coins it took to make the current index then,
               coins[j] = S[i]; //add that denomation that you just subtracted by to the list,
               n = n - S[i]; //go down by that denomation
@@ -59,12 +59,14 @@ static int countWays(int S[], int n)
     }
 
 int main(int argc, char const *argv[]) {
-  int arr[] = {60, 80, 110};
-  int n = 240;
+  int arr[] = {2, 3, 5, 6, 19};
+  int n = 134;
   countWays(arr, n);
   int v = (n-2)*(n-1)*n;
   int* d = (int*)malloc(v * sizeof(int));
   int l = 0;
+
+  /*
   for(int i = 0; i < n-2; i++){
     arr[0] = i;
     for(int j = i+1; j < n-1; j++){
@@ -75,8 +77,9 @@ int main(int argc, char const *argv[]) {
         l++;
       }
     }
-  }
 
+  }
+*/
 
 
   return 0;

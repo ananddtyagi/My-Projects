@@ -40,7 +40,7 @@ public class Coins{
           arr[1] = j;
           for(int k = j+1; k < n+1; k++){
             arr[2] = k;
-            printf("%d, %d, %d\n", i, j, k);
+
             System.out.println(d[l]);
             d[l] = countWays(arr, n);
 
